@@ -4,12 +4,12 @@ import 'package:todoapp/models/task.dart';
 void main() {
   test('Task toggles completion status', () {
     final task = Task(title: "Test Task", description: "Test Desc");
-    expect(task.isCompleted, false);
+    expect(task.isDone, false);
 
-    task.toggleCompleted();
-    expect(task.isCompleted, true);
+    task.toggleDone();
+    expect(task.isDone, true);
 
-    task.toggleCompleted();
-    expect(task.isCompleted, false);
+    task.toggleDone();
+    expect(task.isDone, false);
   });
 }

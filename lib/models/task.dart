@@ -1,15 +1,16 @@
+// lib/models/task.dart
 class Task {
-  String title;
-  String description;
-  bool isCompleted;
+  final String title;
+  final String description;
+  bool isDone;
 
   Task({
     required this.title,
-    required this.description,
-    this.isCompleted = false,
+    this.description = '',
+    this.isDone = false,
   });
 
-  void toggleCompleted() {
-    isCompleted = !isCompleted;
+  void toggleDone() {
+    isDone = !isDone;
   }
 }

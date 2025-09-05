@@ -5,10 +5,7 @@ import 'providers/task_provider.dart';
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
-      create: (_) => TaskProvider(),
-      child: const MyApp(),
-    ),
+    ChangeNotifierProvider(create: (_) => TaskProvider(), child: const MyApp()),
   );
 }
 
